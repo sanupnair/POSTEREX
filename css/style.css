@@ -1,0 +1,201 @@
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+textarea {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+	color: rgb(255, 174, 0);
+  text-decoration: none;
+  display: none;
+  font-size: 18px;
+}
+a:hover {
+	color: rgb(252, 252, 246);
+  text-decoration: none;
+  font-size: 15px;
+}
+b:hover {
+	color: rgb(0, 102, 255);
+  text-decoration: none;
+  letter-spacing: none;
+}
+
+
+
+h3:hover {
+color: black;
+}
+p{
+  font-size: 15px;
+}
+p:hover {
+  
+  color: #333333;
+}
+
+.main1 {
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0;
+  column-gap: 1px;
+  row-gap: 1px;
+  width:60%;
+  height: 1150px;
+  position: absolute;
+  background-color: #333333;
+  margin-left: 17%;
+
+}
+
+.item {
+ 
+  
+  display: inline-block;
+  margin: 2px;
+  width: 100%;
+  max-height:50px;
+  
+  
+}
+.item1{
+  background-color: #333333ee;
+  border: 1px solid white;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px 5px;
+  margin: 2px;
+  
+}
+
+span:hover + a {
+  display: block;
+  
+}
+.item2{
+  max-width: 400px;
+  min-height: 270px;
+  background-color: #FF0;
+  background-size: contain;
+  text-align: center;
+  text-align: justify;
+  padding: 15px;
+  
+ }
+
+.item3{
+  width: 400px;
+  height: 100px;
+  background-color: #FF0;
+  background-size: contain;
+  text-align: center;
+  text-align: justify;
+  
+  
+}
+.item4{
+ 
+  color: #ffffff;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  text-align: justify;
+ 
+  
+  margin: 2px;
+  
+}
+.item5{
+ 
+  color: #ffffff;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  text-align: justify;  
+  margin: 2px;
+  
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.tm-img-left {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.anim {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  position: relative;
+  animation-name: example;
+  animation-duration: 8s;
+  margin-left: 17.2%;
+  animation-iteration-count:infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left: 17.2%; top:0px;}
+  25%  {background-color:yellow; left:68%; top:0px;}
+  50%  {background-color:blue; left:68%; top:1280px;}
+  75%  {background-color:green; left:17.2%; top:1170px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+@media (max-width: 1232px) {
+  body {
+    padding: 60px;
+  }
+}
+
+
+
+@media (max-width: 390px) {
+  body {
+    padding: 40px 20px 10px;
+  }
+
+  .tm-form-section-tag-inner {
+    left: 25px;
+    right: -25px;
+    bottom: -25px;
+  }
+}
